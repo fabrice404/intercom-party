@@ -105,6 +105,5 @@ describe('party', () => {
         party.listInvitedCustomers(coord.Dublin.lat, coord.Dublin.lng, 100);
       }).to.throw();
     });
-
   });
 });

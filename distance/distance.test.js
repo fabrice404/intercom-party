@@ -1,5 +1,5 @@
-const distance = require('./distance');
-const expect = require('chai').expect;
+const distance = require('./distance'),
+  expect = require('chai').expect;
 
 const coord = {
   Dublin: {
@@ -38,7 +38,6 @@ describe('distance', () => {
       }).to.throw();
     });
   });
-
 
   describe('#calculateDistance()', () => {
     it('should be a function', () => {
