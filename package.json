@@ -4,7 +4,7 @@
   "description": "Intercom screener",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha */*.test.js"
+    "test": "standard --env mocha && nyc mocha */*.test.js"
   },
   "author": "Fabrice Lamant",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "chai-as-promised": "^7.1.1",
     "mocha": "^4.1.0",
     "nyc": "^11.4.1",
-    "sinon": "^4.1.3"
+    "sinon": "^4.1.3",
+    "standard": "^10.0.3"
   }
 }

@@ -1,4 +1,4 @@
-const party = require('./party');
+const party = require('./party')
 module.exports = {
   listInvitedCustomers: party.listInvitedCustomers
-};
+}
