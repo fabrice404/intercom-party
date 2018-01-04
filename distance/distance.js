@@ -18,11 +18,12 @@ exports.calculateDistance = (latA, lngA, latB, lngB) => {
   lngA = this.convertDegToRad(lngA)
   latB = this.convertDegToRad(latB)
   lngB = this.convertDegToRad(lngB)
-  return EARTH_RADIUS *
-    Math.acos(
+  return Math.floor(
+    EARTH_RADIUS * Math.acos(
       Math.cos(latA) * Math.cos(latB) * Math.cos(lngB - lngA) +
       Math.sin(latA) * Math.sin(latB)
     )
+  )
 }
 
 exports.convertDegToRad = (deg) => {

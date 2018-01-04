@@ -45,7 +45,7 @@ describe('distance', () => {
     })
 
     it('should return expected value', () => {
-      expect(distance.calculateDistance(coord.Dublin.lat, coord.Dublin.lng, coord.Paris.lat, coord.Paris.lng)).to.equal(780.4313446291235)
+      expect(distance.calculateDistance(coord.Dublin.lat, coord.Dublin.lng, coord.Paris.lat, coord.Paris.lng)).to.equal(780)
     })
 
     it('should throw an error when coordinate is undefined', () => {
